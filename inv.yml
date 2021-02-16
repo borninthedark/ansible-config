@@ -1,0 +1,17 @@
+---
+all:
+  hosts:
+  children:
+    control:
+      hosts:
+        red_1:
+    worker:
+      hosts:
+        black_2:
+        green_3:
+...
+
+
+
+
+

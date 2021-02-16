@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: List dir_check
+      command: ls -latr 
+      register: dir_check
+
+    - name: Var Output
+      debug: msg="The output is {{ dir_check }}"
+
+
+ 
+
+...
